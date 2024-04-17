@@ -1,7 +1,11 @@
 // Import the SDK
 import { DiscordSDK } from "@discord/embedded-app-sdk";
 
-import rocketLogo from '/rocket.png';
+import rocketLogo from '/perro.jpg';
+import riko from '/riko.mp4';
+import gd from '/gd.mp4';
+
+
 import "./style.css";
 
 // Will eventually store the authenticated user's access_token
@@ -110,6 +114,126 @@ async function appendGuildAvatar() {
 document.querySelector('#app').innerHTML = `
   <div>
     <img src="${rocketLogo}" class="logo" alt="Discord" />
-    <h1>Hello, World!</h1>
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />  <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />  <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />  <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />  <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />  <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />  <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />  <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />  <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />  <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />  <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />  <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />  <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />  <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />  <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />  <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <img src="${rocketLogo}" class="logo" alt="Discord" />
+    <h1>ola</h1>
   </div>
 `;
