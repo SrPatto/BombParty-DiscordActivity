@@ -5,7 +5,7 @@ export default defineConfig({
   envDir: '../',
   server: {
     proxy: {
-      '/api/*': {
+      '/api': {
         target: 'http://localhost:3001',
         changeOrigin: true,
         secure: false,
