@@ -1,10 +1,9 @@
 // Import the SDK
 import { DiscordSDK } from "@discord/embedded-app-sdk";
 
-import rocketLogo from '/perro.jpg';
-import riko from '/riko.mp4';
-import gd from '/gd.mp4';
-
+import rocketLogo from "/perro.jpg";
+import riko from "/riko.mp4";
+import gd from "/gd.mp4";
 
 import "./style.css";
 
@@ -30,10 +29,7 @@ async function setupDiscordSdk() {
     response_type: "code",
     state: "",
     prompt: "none",
-    scope: [
-      "identify",
-      "guilds",
-    ],
+    scope: ["identify", "guilds"],
   });
 
   // Retrieve an access_token from your activity's server
@@ -58,17 +54,18 @@ async function setupDiscordSdk() {
   }
 }
 
-
 async function appendVoiceChannelName() {
-  const app = document.querySelector('#app');
+  const app = document.querySelector("#app");
 
-  let activityChannelName = 'Unknown';
+  let activityChannelName = "Unknown";
 
   // Requesting the channel in GDMs (when the guild ID is null) requires
   // the dm_channels.read scope which requires Discord approval.
   if (discordSdk.channelId != null && discordSdk.guildId != null) {
     // Over RPC collect info about the channel
-    const channel = await discordSdk.commands.getChannel({ channel_id: discordSdk.channelId });
+    const channel = await discordSdk.commands.getChannel({
+      channel_id: discordSdk.channelId,
+    });
     if (channel.name != null) {
       activityChannelName = channel.name;
     }
@@ -76,20 +73,20 @@ async function appendVoiceChannelName() {
 
   // Update the UI with the name of the current voice channel
   const textTagString = `Activity Channel: "${activityChannelName}"`;
-  const textTag = document.createElement('p');
+  const textTag = document.createElement("p");
   textTag.textContent = textTagString;
   app.appendChild(textTag);
 }
 
 async function appendGuildAvatar() {
-  const app = document.querySelector('#app');
+  const app = document.querySelector("#app");
 
   // 1. From the HTTP API fetch a list of all of the user's guilds
   const guilds = await fetch(`https://discord.com/api/v10/users/@me/guilds`, {
     headers: {
       // NOTE: we're using the access_token provided by the "authenticate" command
       Authorization: `Bearer ${auth.access_token}`,
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
   }).then((response) => response.json());
 
@@ -98,20 +95,20 @@ async function appendGuildAvatar() {
 
   // 3. Append to the UI an img tag with the related information
   if (currentGuild != null) {
-    const guildImg = document.createElement('img');
+    const guildImg = document.createElement("img");
     guildImg.setAttribute(
-      'src',
+      "src",
       // More info on image formatting here: https://discord.com/developers/docs/reference#image-formatting
       `https://cdn.discordapp.com/icons/${currentGuild.id}/${currentGuild.icon}.webp?size=128`
     );
-    guildImg.setAttribute('width', '128px');
-    guildImg.setAttribute('height', '128px');
-    guildImg.setAttribute('style', 'border-radius: 50%;');
+    guildImg.setAttribute("width", "128px");
+    guildImg.setAttribute("height", "128px");
+    guildImg.setAttribute("style", "border-radius: 50%;");
     app.appendChild(guildImg);
   }
 }
 
-document.querySelector('#app').innerHTML = `
+document.querySelector("#app").innerHTML = `
   <div>
     <img src="${rocketLogo}" class="logo" alt="Discord" />
     <img src="${rocketLogo}" class="logo" alt="Discord" />
@@ -234,6 +231,18 @@ document.querySelector('#app').innerHTML = `
     <img src="${rocketLogo}" class="logo" alt="Discord" />
     <img src="${rocketLogo}" class="logo" alt="Discord" />
     <img src="${rocketLogo}" class="logo" alt="Discord" />
+     <video width="320" height="240" autoplay muted>
+  <source src="${riko}" type="video/mp4">
+
+
+Your browser does not support the video tag.
+</video> 
+<video width="320" height="240" autoplay muted>
+  <source src="${gd}" type="video/mp4">
+
+
+Your browser does not support the video tag.
+</video> 
     <h1>ola</h1>
   </div>
 `;
